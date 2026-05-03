@@ -129,9 +129,11 @@
 .reel-video-wrap {
   position: relative;
   aspect-ratio: 9/16;
-  max-height: 380px;
+  max-height: 520px;
   background: #07111c;
   overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
 }
 .reel-video-wrap video,
 .reel-video-wrap iframe { width: 100%; height: 100%; object-fit: cover; border: none; }
@@ -161,10 +163,12 @@
   padding: 22px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 8px;
 }
 .reel-info h3 { font-family: var(--font-display); font-size: 1.15rem; color: var(--gold-light); }
-.reel-info p { font-size: 0.83rem; color: var(--text-muted); line-height: 1.7; }
+.reel-info p { font-size: 0.83rem; color: var(--text-muted); line-height: 1.7; max-width: 280px; }
 
 /* ── PRICING ── */
 .cin-pricing-section { position: relative; }
@@ -394,7 +398,7 @@
   .other-link-card h3 { font-size: 1rem; }
   .other-link-card p { font-size: 0.78rem; }
   /* Reels 1-col on small mobile */
-  .reels-grid { grid-template-columns: 1fr; max-width: 340px; margin: 0 auto; }
+  .reels-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; gap: 32px; }
   .film-strip { display: none; }
   .section { padding: 60px 0; }
   
